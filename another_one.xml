@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<another_one xmlns = "https://www.w3schools.com/"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="another_one.xsd">
+
+<book>
+    <title>Python and cocks</title>
+    <publisher>Arth Rawat -_- </publisher>
+</book>

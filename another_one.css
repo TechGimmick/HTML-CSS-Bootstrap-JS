@@ -1,0 +1,17 @@
+book {
+    display: table;
+    width: 70%;
+    margin-left: 40px;
+    margin: 20px;
+}
+
+book >*{
+    display: table-row;
+}
+
+book > * > * {
+    display: table-cell;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+
+}

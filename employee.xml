@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type = "text/css" href="employee.css"?>
+<employee xmlns = "https://www.w3schools.com/"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="employee.xsd">
+
+
+    <customer>
+        <id>1</id>
+        <Name>Arth</Name>
+        <address>Jagatpura </address>
+        <order_id>101</order_id>
+        <Payment_id>1001</Payment_id>
+        <feedback_id>10001</feedback_id>
+        <contact>9625244171</contact>
+        <email>arth@gmail.com</email>
+        <history>Sanitizer</history>
+        <!-- <Feedback>Kind of a good product</Feedback> -->
+    </customer>
+    <product>
+        <id>101</id>
+        <name>Sanitizer</name>
+        <quantityinstock>40</quantityinstock>
+        <price>100</price>
+        <brand>Dettol</brand>
+        <origin>Made in India</origin>
+        <supplier_info>Dasarahalli</supplier_info>
+        <category>Hygiene</category>
+        <modelno>45678</modelno>
+
+    </product>
+</employee>

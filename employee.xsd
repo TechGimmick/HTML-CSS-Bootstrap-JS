@@ -1,0 +1,33 @@
+<xs:element name="employee" >
+<xs:complexType name = "customer">
+<xs:sequence>
+    
+        <xs:element id= "id" type= "xs:integer"/>
+        <xs:element id= "Name" type= "xs:string"/>
+        <xs:element id= "address" type= "xs:string"/>
+        <xs:element id= "order_id" type= "xs:integer"/>
+        <xs:element id= "payment_id" type= "xs:integer"/>
+        <xs:element id= "feedback_id" type= "xs:integer"/>
+        <xs:element id= "contact" type= "xs:integer"/>
+        <xs:element id= "email" type= "xs:string"/>
+        <xs:element id= "history" type= "xs:string"/>
+        <xs:element id= "Feedback" type= "xs:string"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name = "product">
+<xs:sequence>
+    
+        <xs:element id= "id" type= "xs:integer"/>
+        <xs:element id= "name" type= "xs:string"/>
+        <xs:element id= "quantityinstock" type= "xs:integer"/>
+        <xs:element id= "price" type= "xs:integer"/>
+        <xs:element id= "brand" type= "xs:string"/>
+        <xs:element id= "origin" type= "xs:string"/>
+        <xs:element id= "supplier_info" type= "xs:string"/>
+        <xs:element id= "category" type= "xs:string"/>
+        <xs:element id= "modelno" type= "xs:string"/>
+</xs:sequence>
+</xs:complexType>
+
+</xs:element>

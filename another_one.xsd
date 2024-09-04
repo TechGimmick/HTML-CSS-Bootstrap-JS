@@ -1,0 +1,6 @@
+<xs:element name="another_one" >
+<xs:complexType name = "book">
+<xs:sequence>
+
+    <xs:another_on id = "title" type = "xs:string"/>
+    <xs:another_on id = "publisher" type = "xs:string"/>

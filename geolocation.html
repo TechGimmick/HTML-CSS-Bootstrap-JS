@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.gfg{
+font-size: 40px;
+font-weight: bold;
+color: blue;
+margin-left: 20px;
+}
+.geeks{
+margin-left: 150px;
+}
+p{
+
+font-size: 20px;
+margin-left: 20px;
+}
+</style>
+<title>Geo Location</title>
+</head>
+<body>
+<div class="sample">Sample</div>
+<p>Errors handling in geolocation </p>
+<button c63
+class="geeks" onclick="getlocation()">
+Click
+</button>
+<p id="demo1"></p>
+<script>
+var variable1 = document.getElementById("demo1");
+function getlocation(){
+navigator.geolocation.getCurrentPosition(showLoc,errHand);
+}
+function showLoc(pos){
+variable1.innerHTML = "Latitude: "+pos.coords.latitude + "<br>Longitude: "+
+pos.coords.longitude + "<br> Accuracy: " + pos.coords.accuracy + "<br>Speed: "+pos.coords.speed
++ "<br>Timestamp: "+pos.timestamp + "<br> Altitude Accuracy: "+pos.headingavailable ;
+}
+function errHand(err){
+switch (err.code){
+case err.PERMISSION_DENIED: variable1.innerHTML = "The application Doesnt have the "+
+"permission to make use of the location services";
+break;
+case err.POSITION_UNAVAILABLE:variable1.innerHTML = "The location of the device isuncertain";
+break;
+
+case err.TIMEOUT:
+variable1.innerHTML = "The request to get the user location timed out ";
+
+break;
+
+case err.UNKNOWN.ERROR:variable1.innerHTML = "Thime to fetch location informationexceeded "+ "the maximum timeout interval";
+break;
+}
+}
+</script>
+</body>
+</html>
